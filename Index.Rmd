@@ -8,12 +8,12 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: bcb420-2020/General_course_prep
+github-repo: bcb420-2026/General_course_prep
 description: "Prerequisite work for U of T course BCB420 - Computational System Biology"
 download: ["epub"]
-edit : https://github.com/bcb420-2020/General_course_prep/edit/master/%s
-history: https://github.com/bcb420-2020/General_course_prep/commits/master/%s
-view:  https://github.com/bcb420-2020/General_course_prep/blob/master/%s
+edit : https://github.com/bcb420-2026/General_course_prep/edit/master/%s
+history: https://github.com/bcb420-2026/General_course_prep/commits/master/%s
+view:  https://github.com/bcb420-2026/General_course_prep/blob/master/%s
 ---
 
 # About

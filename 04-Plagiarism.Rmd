@@ -146,7 +146,11 @@ Version: 1.1.1<br>
 ### Updated Revision history
 ```{r echo=FALSE}
 source("./bcb420_books_helper_functions.R")
-knitr::kable(githistory2table(git2r::commits(repo=".",path=knitr::current_input())))
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
 
 ```
 
