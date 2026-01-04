@@ -1,0 +1,1250 @@
+--- 
+title: "BCB420 - Computational System Biology"
+author: "Main author: Boris Steipe; Modified: Ruth Isserlin"
+date: "last modified `r Sys.Date()`"
+site: bookdown::bookdown_site
+output:   bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: bcb420-2026/General_course_prep
+description: "Prerequisite work for U of T course BCB420 - Computational System Biology"
+download: ["epub"]
+edit : https://github.com/bcb420-2026/General_course_prep/edit/master/%s
+history: https://github.com/bcb420-2026/General_course_prep/commits/master/%s
+view:  https://github.com/bcb420-2026/General_course_prep/blob/master/%s
+---
+
+# About
+
+Original content for this book was created by [Boris Steipe](http://biochemistry.utoronto.ca/person/boris-steipe/) from [Boris Steipe BCB420 wiki resources](http://steipe.biochemistry.utoronto.ca/abc/index.php/Computational_Systems_Biology_Main_Page) licensed under ![](images/cc_icon.png) [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). 
+
+## Attributions:
+
+This book was created using The **bookdown** package and can be installed from CRAN or Github:
+
+```{r eval=FALSE}
+install.packages("bookdown")
+# or the development version
+# devtools::install_github("rstudio/bookdown")
+```
+
+```{r include=FALSE}
+#initialize the task counter
+task_counter <- 0
+```
+
+
+Icons are from the [“Very Basic. Android L Lollipop” set by Ivan Boyko](https://www.iconfinder.com/iconsets/very-basic-android-l-lollipop) licensed under [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). 
+
+
+
+
+<!--chapter:end:index.Rmd-->
+
+# Wiki - Editing {#wiki}
+
+(Wiki editing, namespaces; user page setup; copyright, a Course Journal stub page, and an insights! stub page)
+
+## Overview 
+### Abstract:
+This will likely be the first learning unit you work with, since your Course Journal will be kept on a Wiki, as well as all other deliverables. This unit includes an introduction to authoring Wikitext and the structure of Wikis, in particular how different pages live in separate "Namespaces". The unit also covers the standard markup conventions - "Wikitext markup" - the same conventions that are used on Wikipedia - as well as some extensions that are specific to our Course- and Student Wiki. We also discuss page categories that help keep a Wiki organized, licensing under a Creative Commons Attribution license, and how to add licenses and other page components through template codes.
+
+### Objectives:
+
+  * Provide an introduction to Wiki principles and Wikitext markup.
+  * Create first pages on your own on the Student Wiki.
+  * Learn about copyright, why we use Creative Commons licenses for the Student Wiki and how to place a license tag.
+
+### Outcomes:
+
+  * You are competent with basic Wiki markup and the extensions on this Wiki.
+  * You can create pages and add them to categories while taking care to create them into your own user space.
+  * You have created your own user page on the Student Wiki and added contents.
+  * You have created page stubs for a Course Journal and an insights! page.
+
+### Deliverables:
+  * Specified as "Tasks": There are no general deliverables for this unit; specific deliverables are described in the "Task" sections.
+ 
+## Wiki
+
+Collaboration is a common theme for modern lab work and a Wiki is a great way to share and seamlessly update information in groups - or just for yourself. Probably the most sophisticated Wiki software is MediaWiki, a set of PHP scripts that is under continuous development by the Wikimedia foundation; it is the same software that runs Wikipedia. This is open source, free software that is easy to install, is well documented and requires very little resources other than a machine that runs a MySQL database server and an Apache Webserver. Numerous extensions exist (and extensions are not hard to write); they enhance the already rich functionality. But let's start with small steps. You should by now have a user account on the Student Wiki, and I have configured that Wiki so that:
+
+  * only logged in users can view the pages; but ...
+  * all logged in users can create and edit (most) pages at will.
+  * This means you could edit pages that don't "belong" to you. Respect the "House Rules" and don't edit other's things without permission, even if you can think of a particularly witty comment or hilarious prank. If you want to comment on a page: every page has an associated "Discussion" page that you can freely edit. Remember to "sign your name" to discussion entries.
+
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+  1. Access the Student Wiki;
+  1. log in and navigate to your user page. (Your user page is linked to your name that appears at the top of every Wikipage once you are logged in.) 
+  1. Create / edit the page, try out and experiment with the Wikitext syntax that this unit covers as you read about the different elements.
+  1. Work through the contents below.
+```
+
+For more extensive formatting help see:http://meta.wikimedia.org/wiki/Help:Editing
+
+For Math markup see: http://meta.wikimedia.org/wiki/Help:Formula
+ 
+## The Wiki concept
+Wiki sites are collections of Web pages that allow you to view, edit and create pages from your browser, there is no need for special technology and basic editing is simple and intuitive with "Wikitext markup".
+
+The basic workflow of Wikis is straightforward:
+
+  * Register an account and browse the site.
+  * Whenever you find something that you can improve, edit it.
+  * Whenever you find something that you would like to comment on, click on the "discussion" tab and share your views.
+  * If you are interested in what becomes of your edits or the discussion, click on the "watch" tab, and the page will be added to a list of bookmarks to pages you are "watching".   (You can even generate an RSS feed for recent changes or new pages).
+  * No e-mail, no obligations. Do what you like, when you like, what you can.
+  * Editing on the Course Wiki is only enabled for instructors. However you can freely edit all pages on the Student Wiki, once you have an account.
+ 
+## Editing basics
+### Start editing
+
+To start editing a Wiki page, click on the "Edit" link at one of its edges. This will bring you to the edit page: a page with a text box containing the wikitext: the editable source code from which the server produces the webpage.
+ 
+### Preview before saving
+
+When you have finished, press Show preview to see how your changes will look. Repeat the edit/preview process until you are satisfied, then click Save and your changes will be immediately applied to the article and accessible on the Web. They will also be stored in the main database for as long as the Wiki exists. Thus it is always possible to get back earlier versions of pages - back to the very first edit.
+  
+### Basic text formatting
+
+Here are some examples of the markup of Wikitext. It is not the same as HTML markup, however some HTML markup will work. In particular, the Wiki applies styles through CSS technology (Cascading Style Sheets) and thus HTML tags can be used to apply consistent styles to individual page elements. Javascript won't work.
+
+
+
+| What you type |  What it looks like| 
+|:----------------------------------|:--------------------------------------| 
+| You can ''emphasize text'' by putting two apostrophes on each side. Three apostrophes will emphasize it '''strongly'''. Five apostrophes is '''''even stronger'''''.| You can **emphasize text** by putting two apostrophes on each side. Three apostrophes will emphasize it **strongly**. Five apostrophes is **even stronger**. |
+| A single newline has no effect on the layout.But an empty line starts a new paragraph. | A single newline has no effect on the layout.<br> But an empty line starts a new paragraph. |
+|You can break lines without starting a new paragraph using a \<br\> tag.| You can break lines<br> without starting a new paragraph.<br>|
+
+(This may not be very useful beyond the types of examples we show here, but it is a frequent source of confusion, when you find your text marked up this way by accident)
+You can format text in a monospace font with a dashed box around it either by marking it with the HTML \<pre\> tag, or by putting a blank space at the beginning of a line. 
+Example:
+
+<pre>You can format text in a monospace font with a dashed box around it either by marking it with the HTML \<pre\> tag, or by putting a blank space at the beginning of a line.</pre>
+
+### Other special characters at the beginning of a line include:
+| What you type |  What it looks like| 
+|:----------------------------------|:--------------------------------------| 
+| \* bulleted list | * bulleted list |
+| # numbered list | 1. numbered list |
+| ; term | **term** |
+| : definition | **definition** |
+
+### Other special characters at the beginning of a line include:
+
+You should "sign" your comments on discussion pages:
+
+| What you type |  What it looks like| 
+|:----------------------------------|:--------------------------------------| 
+| : Three tildes gives your user name - \~\~\~ | Three tildes gives your user name - Boris (talk) |
+| : Four tildes: user name plus date/time - \~\~\~\~ | Four tildes: user name plus date/time - Boris (talk) 22:18, 27 December 2012 (EST) |
+| : Five tildes: date/time alone - \~\~\~\~\~ | Five tildes: date/time alone - 22:18, 27 December 2012 (EST) |
+|Use normal HTML character codes for special characters, or use Unicode. For example: \&gt; \&lt; \&amp; \&deg; \&Aring; \&Auml; \&uuml; \&rarr; | Use normal HTML character codes for special characters, or use Unicode. For example: &gt; &lt; &amp; &deg; &Aring; &Auml; &uuml; &rarr; |
+
+```{block2, type="rmd-caution"}
+Signatures NOT supported in github wikimedia implementation
+```
+
+### You can use HTML tags, too, if you want. Some useful ways to use HTML:
+| What you type |  What it looks like| 
+|:----------------------------------|:--------------------------------------| 
+|Put text in a typewriter font (with \<tt\>). The same font is generally used for computer code (with \<code\>). |Put text in a <tt>typewriter font</tt>.The same font is generally used for <code>computer code</code>. |
+|Strike out (with \<string\>) or underline text(\<u\>), or write it in small caps(with \<span style="font-variant:small-caps"\>.|<strike>Strike out</strike> or <u>underline</u> text, or write it <span style="font-variant:small-caps"> in small caps</span>.|
+|Superscripts (with \<sup\>)   and subscripts(with \<sub\>) : x2, x2|x<sup>2</sup>, x<sub>2</sub>|
+|Invisible comments that only appear while editing the page.|<!-- Note to editors: blah blah blah. -->|
+
+For a list of HTML tags that are allowed, see [HTML in wikitext](https://meta.wikimedia.org/wiki/Help:HTML_in_wikitext). I tend to use Wiki-markup when I'm in a hurry, but use the HTML tag whenever I can't remember a Wiki-tag. It really doesn't make a difference.
+
+However: I never use Wiki-table markup. I find it less intuitive than HTML markup, more difficult to debug, and there's really no point in remembering both types of markup given that one really needs to be comfortable with HTML tables anyway.
+ 
+ 
+### Links
+
+You will often want to make clickable links to other pages.
+
+| What you type |  What it looks like| 
+|:----------------------------------|:--------------------------------------| 
+|Here's a link to a page named [[Sandbox]].<br> You can even say [[Sandbox]]es<br> and the link will show up right.<br>You can put formatting around a link. Example: ''[[Sandbox]]''.|Here's a link to a page named [Sandbox](#journal).<br> You can even say [Sandbox](#journal)es and the link will show up right.<br> You can put formatting around a link. Example: **[Sandbox](#journal)**. |
+| You can link to an arbitrary piece of text with a piped link. Put the link target first, then the pipe character "|", then the link text - as in this example.| You can link an arbitrary piece of text<br>with a ''piped link''. Put the link<br>target first, then the pipe character "|", then >br>the link text - as in [[Sandbox| this example]].|
+|You can make an external link to a Web page just by typing an URL, e.g. http://igem.org<br>Or you can link arbitrary text: iGEM. (Note: No "|" for external links, URL and text are separated by a blank, and only single square brackets!)<br> You can make an external link to a Web page<br>just by typing an URL, e.g. http://igem.org|Or you can link arbitrary text:<br>[http://igem.org iGEM]. <br>(Note: No "|" for **external** links, URL and text are separated by a blank, and only single square brackets!)|
+|Or you can generate a footnote-like link: \^[example footnote]|Or you can generate a footnote-like link:^[http://igem.org].|
+
+ 
+**Note**: remember: internal links (using [[...]] tags to link to pages on this Wiki) are separated from linked text with a pipe character. External links (using [...] tags to link to pages elsewhere on the Internet) are separated from linked text with a space character.
+ 
+ 
+### Special syntax
+Two special syntax items need to be mentioned: "templates" and "magic words":
+
+#### Templates
+
+Templates are pieces of Wikitext that are substituted where a code that links to them has been placed into a page. For example, if you enter {{Lorem}} on a page, the "Lorem ipsum dolor sit amet ..." placeholder text is inserted in place of that code. Wikis make extensive use of templates.
+
+```{block2, type="rmd-caution"}
+Templates NOT supported in github wikimedia implementation
+```
+
+#### Magic words
+
+some reserved "magic"-words are replaced with dynamically created contents when the page is rendered. For example \__TOC\__ forces placing a Table Of Contents at the position of this token rather than its default position, while \__NOTOC\__ suppresses creation of a Table Of Contents on a page.
+ 
+ 
+### Creating a new page
+
+To create a new page simply insert a link to a Wiki page, which has a page name that does not exist yet. The link will appear in red (except if you inadvertently used the name of a page that already exists), and the new page will be created when you click on the link. Page names can be long and contain blank spaces. Internally, all blank spaces are converted to underscore characters, but you can use the page name without underscores in links; the Wiki software translates this for you.
+ 
+ 
+### Namespaces
+
+The Wiki maintains some pages in special collections, in so called "namespaces". This is useful, because the behaviour of the software can be customized for different namespaces: for example you may be allowed to edit in the main- and the user- namespace, but not in the MediaWiki: namespace, where pages are held that affect the gears and wires of the Wiki. Page names without a prefix live in the main space. Some commonly used prefixes are:
+
+  * User: - personal pages for user with an account on the Wiki;
+  * Talk: - discussion pages for comments on pages, accessible via the "Discussion" tab;
+  * Help: - this page for example;
+  * Template: - pages with reusable text.
+  * Special: - pages that implement special functionality (like login, user lists, or lists of recently changed pages);
+  * Category: - an index of pages that have been given a common tag. This is a convenient way to access pages that are in some way related;
+ 
+ 
+### Categories
+
+Once your page has been edited, you can associate it with one or more categories. Add the appropriate category tag by typing [[Category:BCH441_2013]] or [[Category:BCB410_2013]]. The page is then automatically linked from a page that collects all pages with that category tag. I would prefer that you do not create new categories; ask me if you feel a need for it.
+
+```{block2, type="rmd-caution"}
+Categories NOT supported in github wikimedia implementation
+``` 
+ 
+### Creating a new section or subsection on a page
+
+To create a section or subsection, simply insert a section header into an existing section. Header levels are defined by the number of "=" characters before and after the header text. Click on an edit link of this page to see example code. Once a page has more than two headings, the Wiki automatically creates a table of contents. You can adjust the position of the table of contents by typing the "magic word" \__TOC\__ somewhere on your page (Note: double underscore), you can also suppress having a table of contents created with \__NOTOC\__.
+ 
+### Edit conflicts
+
+If someone else makes an edit while you are making yours, the result is an edit conflict. Many conflicts can be automatically resolved by the Wiki. If it can't be resolved, however, you will need to resolve it yourself. The Wiki gives you two text boxes, where the top one is the other person's edit and the bottom one is your edit. Merge your edits into the top edit box, which is the only one that will be saved.
+ 
+ 
+### Reverting pages to a previous state
+
+Sometimes a page needs to be reverted to a previous state. Access the page through a link to the Recent Changes special page: Special:Recentchanges. Find the page you need to revert, click on the hist link, click on the version you need and verify that it is the correct one. Then click on the edit tab at the top and Save page. A new version of the page is then created with the old text. Note that this does not actually overwrite anything - all edits are archived in the database.
+
+## The "User space" and subpages
+
+The User: namespace on the Student Wiki is especially important.
+
+Namespaces allow us to distinguish pages that share the same logical name. Every student will create a journal page, but of course there can be only one [[Journal]] page on the Wiki. Therefore each of these pages needs a distinct name. The obvious solution is to keep them in the User: namespace, and create them as subpages of everyone's User page. The page name of your user page is [[User:<your-login-name>]]; subpages are created with a backslash, and therefore your Course Journal page should be [[User:<your-login-name>/Journal]]. if you take more than one course, you can separate the journals like [[User:<your-login-name>/BCH441-Journal]], [[User:<your-login-name>/BCB410-Journal]], etc.
+
+Please do not create pages in the "Main space" of the Student Wiki! Do not omit the User:<your-login-name>/ part of the page name.
+
+## Copyright
+
+Over the last decades, in bioinformatics and many other fields of science, the paradigm under which we create value has profoundly changed. While we previously considered restrictions on the use of our insights important, tried to keep knowledge under control, and thought in terms of intellectual property, the modern paradigm is mindshare. We strive to make our work maximally useful to others, and to document how we are creating this utility. This does not mean that we are simply putting everything into the public domain: yes, people should use our ideas, but we must receive credit - as a currency for grant and scholarship applications and the like, to enable our future work. The right tool for this is copyright.
+
+Everything we write and create automatically falls under our copyright, there is no special copyright tag required. To have our material reused, we can either relinquish our copyright or grant a license to reuse. Material that is created in coursework will ideally be useful elsewhere, but it is only useful if its use is permitted and regulated.
+
+Wikis are tools for collaboration, and Wikipedia generally applies a site-wise license to all material. In our work we take a similar approach, but we apply licenses more specifically^[**Note**:that additional rules for collaboration in the context of coursework derive from the rules for academic integrity and plagiarism. If some text is not copyrighted, this does not mean you can use it without reference and thus imply it is your own idea. That would be plagiarism.]. All material submitted for credit, including code, documentation, essays, manuals, images, lab journal entries, insights! pages etc. must be licensed with an appropriate open-source license. This is a strict requirement for the course. For code this is the MIT software license, for everything else this is the Creative Commons Attribution 4.0 International License. The MIT license for code guarantees that there are no restrictions on re-use other than fair and visible attribution of the authors' work. The CC license guarantees proper attribution of authorship but allows free use otherwise. Together, these licenses allow the material to be used, refactored, updated and republished and thus (hopefully) give it a fertile future life.
+
+In order to keep copyright and licenses consistent throughout the site, we use a template tag - simply insert it at the bottom of a page:
+Entering the template code ...
+{{CC-BY}}
+creates the copyright message ...
+
+ This copyrighted material is licensed under a Creative Commons Attribution 4.0 International License. Follow the link to learn more.
+
+```{block2, type="rmd-caution"}
+Templates NOT supported in github wikimedia implementation.  You can add the Copyright information as a footer to all your created pages. 
+```
+
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+  * Practice basic editing syntax by putting contents on your User Page:
+    * enter your name,
+    * your major(s), specialist program, year of study - or a link to your lab and your thesis theme if you are a graduate student;
+    * enter your email address. I use this information a lot when I need to contact students, so make sure it is correct and current.
+    * Add a category tag to your User page for the course you are taking. All pages with this tag are accessible via the link in the sidebar. What should the category tag say? Good question ... go and find out.
+    * Add a copyright template to the bottom of your user page by putting a {{CC-BY}} tag on its bottom.
+    * Feel free to look at my User Page for code examples: clicking on the edit link will show you the source text. How do you find my User Page? Good question ...
+    * Create a subpage to your User Page; call it "Journal". Note: the link MUST be in your "User space". If you don't add the prefix User:yourname/... before your page name, the new page will end up in the main "namespace". I'll then have to delete it. That's not good. Make sure you know what you are doing, for example by looking at the code on my User Page, asking someone who knows, or asking on the mailing list.
+    * Put some placeholder text on your journal page, you will fill it in when you work through the Journal unit.
+    * Similarly, create an "insights!" page on a subpage to your User Page and add some placeholder text. That will be expanded when you work through the insights! unit.
+    * Play around some more. Feel free to ask how to go about achieving a particular effect that you may have seen elsewhere.
+```
+
+## Self-evaluation
+
+You should be familiar with the following:
+
+  * How to Login to the Student Wiki and access your user page;
+  * viewing a page's history;
+  * basic text formatting and Wiki markup;
+  * "signing" your name;
+  * creating internal and external links;
+  * creating section headers on a page on multiple levels;
+  * reverting a changed page to an earlier version;
+  * creating a new page (as a subpage of an existing page);
+  * the concept of namespaces - especially the default ("main") and User: namespace;
+  * the concept of categories and how to add a page to a category;
+  * copyright on the Student Wiki, and how to insert a license note.
+
+## Further reading, links and resources
+ 
+
+**If in doubt, ask!**<br>
+If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.
+
+
+
+
+ 
+```{block2, type="rmd-original-history"}
+<br>**Author**: Boris Steipe <boris.steipe@utoronto.ca> <br>
+**Created**: 2017-08-05<br>
+**Modified**: 2019-01-04<br>
+Version: 1.1<br>
+**Version history**:<br>
+1.1 Changed software license from GNU-GPL to MIT<br>
+1.0 Completed outcomes/objectives. Added copyright. First live version.<br>
+0.2 First contents imported from Help:editing. Added tasks.<br>
+0.1 First stub<br>
+ 
+```
+
+### Updated Revision history
+```{r echo=FALSE}
+source("./bcb420_books_helper_functions.R")
+
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
+
+
+```
+
+### Footnotes:
+
+<!--chapter:end:01-Wiki_editing.Rmd-->
+
+# Your Course Journal {#journal}
+
+(How to keep a course- or lab journal)
+
+## Overview 
+### Abstract:
+Keeping a journal is an essential task in a laboratory. To practice keeping a technical journal, you will document your activities as you are working through the material of the course. A significant part of your term grade will be given for this Course Journal. This unit introduces components and best practice for lab- and course journals and includes a wiki-source template to begin your own journal on the Student Wiki.
+
+### Objectives:
+
+  * Introducing components and best practice of lab- and course journals
+  * Presenting sample wiki-text for Journal entries
+
+### Outcomes:
+
+Upon concluding this unit you should be able to ...
+
+  * Begin a structured course journal on the Student Wiki using proper wiki text;
+  * Write your own journal entries, including media images and code as required;
+  * Cross-reference journal entries with links;
+  * Link to external sources and deliverables on internal pages as appropriate;
+  * Estimate the time you need for tasks, and develop a habit of improving your time-management skills.
+
+### Deliverables:
+
+  1. Your Journal: Your entire journal will be evaluated at the end of the course. Refer to the marking rubrics for details.
+  1. Insights: If you find something particularly noteworthy about this unit, make a note in your insights! page.
+
+
+### Prerequisites:
+
+You need the following preparation before beginning this unit. If you are not familiar with this material from courses you took previously, you need to prepare yourself from other information sources:
+
+  * '''Inquiry''': The scientific method; evidence based reasoning; how to design, execute and document an experiment; Conjecture, hypothesis and theory.
+  * '''Writing''': Basic essay and report writing skills. How to format your submitted materials, how to quote, cite and avoid plagiarism.
+  * This unit builds on material covered in the following prerequisite units:
+    * [Wiki Unit](#wiki)
+ 
+---
+ 
+Work through this unit, then make your work with the "Plagiarism" Unit the first entry of your Journal!
+ 
+Computational research embraces the same best-practice principles as any wet-lab experiment. We ensure our work is reproducible, we take great care that our conclusions are supported by data, and we keep notes to document our objectives, activities and how we arrived at our results. Those notes are more than just a handy collection of information: they need to become a robust, testable record of activities.
+
+Paper notes are not very useful for bioinformatics work because they can't be cross-referenced easily with computer files. Ideally, bioinformatics journals will document results, and link to data files, code repositories, Webpages and other resources. Thus a technical solution needs to support incorporating or linking to results, data, code, workflow scripts, documentation, and much more. In this course, we use the open source Media Wiki software to support journal keeping.
+
+Here are some alternative applications – but (!) disclaimer, I myself don't use any of these (yet):
+
+  1. [Evernote](https://evernote.com/) - a web hosted, automatically syncing e-notebook.
+  1. [Nevernote](http://nixnote.org/) - the Open Source alternative to Evernote.
+  1. [Google Keep](https://keep.google.com/) - if you have a Gmail account, you can simply log in here. Grid-based. Seems a bit awkward for longer notes. But of course you can also use [Google Docs](https://drive.google.com/drive/my-drive).
+  1. [Microsoft OneNote](https://www.onenote.com/signin?wdorigin=ondc) - this sounds interesting and if any one is using this, I'd like to hear from you. Syncing across platforms, being able to format contents and organize it sounds great.
+  1. [RStudio projects](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) - for development-focussed work – especially (but not exclusively) – in R, an RStudio project may be the right solution to keep your code, results, notes, manuscript drafts, literature and other assets all in one place. The great benefit is that it can all be under version control and it's super easy to share everything with colleagues on a team through GitHub Technically, GitHub documents are all publicly accessible if they are stored in repositories of free accounts - but you can commit binary files, so you can simply keep sensitive material in password-protected .zip files or otherwise encrypted.. The only downside that I can think of is that it's not possible to cross-reference and link to material.
+
+Keeping a record of your activities is a habit, and habits need to be formed through practice. Is this going to be useful to you? I don't know, but neither do you unless this habit has been given a credible chance to form. Therefore we practice keeping journals in this course. As a welcome side effect, this creates a record of activities for future reference, and provide a basis for evaluation of your progress at the end of the course. Keeping a journal will help you work with other learning units or project components effectively, because this is all integrated over the entire course, and later units often make use of earlier results which you should have easily accessible.
+
+**Remember**: you are writing a lab notebook—not a formal lab report: a point-form record of your actual activities.^[I have come across "journal entries" that consist only of copy/pasted learning unit objectives...] Write such documentation as notes to your (future) self. Record everything that's necessary, but be light and agile about your writing.
+
+Write your notes immediately, in parallel with your actual activities, don't draft them elsewhere and expect to enter and revise them later. Practice shows that delayed processing of journal notes creates an unmanageable burden. Therefore notes that are not written concurrently with the activity will not be considered for credit in this course. This too is about habit forming. But writing concurrently is so easy: since all of your computational work is done with a computer, begin every work-session by opening an editing window for its journal entry. Have the window open, and immediately record everything of importance. The Wiki is online, so you can even edit your journal from a library computer, and even (although it's awkward) from your phone.
+
+Obviously, the first step is to create a journal page in the User space of the Student Wiki - you have already done this in the Wiki editing unit.
+ 
+## Header
+Write a header and give it a unique number.
+
+This is useful so you can refer to the header number in later text. Obviously, you should "hard-code" the number and not use the Wiki's automatic section numbering scheme, since the numbers should be stable over time, not change when you add or delete a section^[If the Wiki automatically displays section numbers in its Table of Contents, you can turn that off in the preferences.]. It is useful to add any new contents at the top of the page. Keeping the page in reverse chronological order, prevents you having to scroll to the bottom of the page every time you add new material. Note though, that the sections do not actually have to be in strict chronological order, like we would have them in a paper notebook. Typically you would number in a decimal system - like 1, 1.1, 1.2, 2, 3 etc. - so you can easily accomodate additions.
+
+It may be advantageous to give different subprojects their own numbering space - by adding a prefix to the section number. This depends on how related the projects are. Everything you keep on the same page is easy to find with your browser's search function. But if search results come from different projects, that may be inconvenient. To decide what to put on the same page and what should go in different subpages, imagine what material you would search for and what search terms you might use^[Media Wiki also has its own search functions that search for material everywhere on the Wiki, but this is likely not useful on the Student Wiki where many users may be writing about similar things.].
+
+Incidentally: the material in such a notebook is "permanent", since earlier versions of pages are always available via the history function. The Wiki never forgets. As well, they are automatically time-stamped. And that's actually a step beyond paper labnotes.
+ 
+ 
+## Objective
+  * State the objective.
+  * In one brief sentence, restate what your activity is supposed to achieve.
+
+## Estimate duration
+The learning units in this course require you to estimate beforehand how long you will take, and to record how much time you actually took. Record your initial estimate (work-hours), how many hours you took, and how much time elapsed between start and end of your task. Make this a habit in your future coursework as well as in your future labwork. You will quickly note that you will become much better at time-management. The sample journal template that is included below contains wikitext to format a time estimate.
+ 
+## What to document
+  * Document the procedure - Note what you have done, as concisely as possible but with sufficient detail. "What is sufficient detail?" The answer is easy: detailed enough so that someone can reproduce what you have done. In practice that "someone" will often be you, yourself, in the future. I hope that you won't be constantly cursing your past-self because of omissions!
+  * Document your results.
+    * You can distinguish different types of results -
+      1. Static data does not change over time and it may be sufficient to note a reference to the result. For example, there is no need to copy a GenBank record into your documentation, it is sufficient to note the accession number, the refSeq ID, or the UniProt ID, or even better, to link to the relevant page on the external database server.
+      1. Variable data can change over time. For example the results of a BLAST search depend on the sequences in the database. A list of similar structures may change as new structures get solved and deposited in the PDB database. In principle you want to record such data, to be able to reproduce at a later time what your conclusions were based on. But be selective in what you record. For example you should not paste the entire set of results of a BLAST search into your document, but only those matches that were important for your conclusions. '''Indiscriminate pasting of irrelevant information will make your notes unusable.''' Incidentally, the technology to expand and collapse paragraphs that we demonstrated in the Wiki editing unit can be put to excellent use to record data but keep it out of sight when not needed.
+      1. Analysis results - The results of sequence analyses, alignments etc. in general get recorded in your documentation. Again: be selective. Record what is important.
+ 
+## Conclusions
+
+Note your conclusions. - An analysis is not complete unless you conclude something from the results. 
+
+  * Are two sequences likely homologues, or not? Just pasting the BLAST output is not enough. It's your call - '''record it'''.
+  * Does your protein contain a signal-sequence or does it not? SignalP will give you a probability, but you must make the final call.
+  * Is a binding site conserved, or not? The programs can only point out sections of similarity or dissimilarity. You are the one who interprets these numbers in their biological context.
+  
+The analysis provides the data. In your conclusion you provide the interpretation of what the data means in the context of your objective. Were you expecting a signal-sequence but there isn't one? What could that mean? Sometimes your task will explicitly include to elaborate on an analysis and conclusion. But this does not mean that when analysis is not explicitly mentioned, you can skip the interpretation. In general you can never expect full marks if analysis and conclusions are missing.
+ 
+## Outlook for the next tasks
+What's the next step? Note it here. Also include a link to the logically next entry - this way you can quickly hop through consecutive entries for a theme.
+ 
+## Cross references
+Add cross-references.
+
+Cross-references to other information are supremely valuable as your documentation grows. It's easy to see how to format a link to a section of your Wiki-page: just look at the link under the Table of Contents at the top. But you can also place "anchors" for linking anywhere on an HTML page: just use the following syntax. \<span id="{some-label}"\>\<\\span\> for the anchor, and append #{some-label} to the page URL.
+ 
+ 
+## Media
+ 
+### Images
+
+  * Use discretion when uploading images
+  * Don't upload irrelevant images, don't upload copyrighted images, keep the size reasonable.
+Prepare your images well
+  * Don't upload uncompressed screen dumps. Save images in a compressed file format on your own computer. Then use the Image Upload link in the left-hand menu to upload images. The Wiki will only accept .jpeg, .png, .gif, or .svg images.
+  * Use the correct image types.
+  * In principle, images can be stored uncompressed as .tiff or .bmp, or compressed as .gif or .jpg or .png. .gif is useful for images with large, monochrome areas and sharp, high-contrast edges because the LZW compression algorithm it uses works especially well on such data; .jpg (or .jpeg) is preferred for images with shades and halftones such as the structure views you should prepare for several assignments, JPEG has excellent application support and is the most versatile general purpose image file format currently in use; .tiff (or .tif) is preferred to archive master copies of images in a lossless fashion, use LZW compression for TIFF files if your system/application supports it; The .png format is an open source alternative for lossless, compressed images.
+  * .bmp is not preferred for really anything, it is bloated in its (default) uncompressed form and primarily used only because it is simple to code and ubiquitous on Windows computers. Accordingly we don't support it here.
+
+### Image dimensions and resolution
+
+Stereo images should have equivalent points displayed approximately 6cm apart. It depends on your monitor how many pixels this corresponds to. The dimensions of an image are stated in pixels (width x height). My notebook screen has a native display resolution of 1440 x 900 pixels/23.5 x 21 cm. Therefore a 6cm separation on my notebook corresponds to approximately 260 pixels. However on my desktop monitor, 260 pixels is 6.7 cm across. And on a high-resolution iPad display, at 227 ppi (pixels per inch), 260 pixels are just 2.9 cm across. If your assigment or learning unit ask you to prepare stero images: adjust your images so they are approximately at the right separation and are approximately 500 to 600 pixels wide. Also, scale your molecules so they fill the available window and - if you have depth cueing enabled - move them close to the front clipping plane so the molecule is not just a dim blob, lost in murky shadows.
+
+Considerations for print (manuscripts etc.) are slightly different: for print output you can specify the output resolution in dpi (dots per inch). A typical print resolution is about 300 dpi: 6 cm separation at 300dpi is about 700 pixels. Print images should therefore be about three times as large in width and height as screen images.
+
+### Preparation of stereo views
+
+  * When assignments or leartning units ask you to create images of molecules, always create stereo views.
+  * Keep your images uncluttered and expressive
+  * Scale the molecular model to fill the available space of your image well.
+  
+  Orient views so they illustrate a point you are trying to make. Emphasize residues that you are writing about with a contrasting colouring scheme. Add labels, where residue identities are not otherwise obvious. Turn off side-chains for residues that are not important. The more you practice these small details, the more efficient you will become in the use of your tools.
+ 
+### Code
+
+Always markup code using the GeSHi extension. This provides syntax highlighting, which is very useful to read the code. You simply place the code-block into opening- and closing "source" tags, and tell GeSHi which language it should assume. For R-code this looks like:
+
+```r
+for i in 1:10{
+  a = 1
+}
+```
+
+You can also use GeSHi to markup plain text - (although you can achieve a similar effect by simply beginning each line with a blank " ").
+
+```
+Lorem ipsum dolor sit amet ...
+```
+
+## Wikitext Template
+
+The section below contains Wiki-markup code that you can copy and paste for your course journal.
+
+```{r eval=FALSE}
+
+<!-- HTML comments will not be rendered by the wiki. -->
+
+<div class="b1">
+Sample Journal
+</div>
+
+<!-- To position the table of contents at a particular position, include -->
+<!-- the __TOC__ "magic text" -->
+
+{{Vspace}}
+
+__TOC__
+
+{{Vspace}}
+
+<!-- BEGIN template for one entry -->
+== <my activity> ==
+
+;Objective
+: text ...
+
+<div class="time-estimate">
+Time estimated: XXX h; taken XXX h; date started: 2017-MM-DD; date completed: 2017-MM-DD
+</div>
+
+===Progress===
+
+;Activity 1
+: Notes ...
+
+;Activity 2
+: Notes ...
+
+=== Conclusion and outlook===
+
+Describe ...
+
+{{Vspace}}
+
+<!-- END of template for one entry -->
+
+
+<!-- BEGIN sample entry -->
+
+== (Example Journal Entry) Explore Cytoscape ==
+
+;Objective
+: Write R code to generate a random network. Explore it with Cytoscape.
+
+<div class="time-estimate">
+Time estimated: 2 h; taken 4 h; date started: 2017-09-16; date completed: 2017-09-18
+</div>
+
+===Progress===
+
+;R code for a random network.
+: Cytoscape can read networks in [http://wiki.cytoscape.org/Cytoscape_User_Manual/Network_Formats#SIF_format SIF format]. Wrote the following code to generate N random nodes with random interactions and write them to file.
+
+<div class="toccolours mw-collapsible mw-collapsed" style="width:800px">
+My R code below ...
+<div class="mw-collapsible-content">
+
+<source lang="R">
+N <- 15  # number of nodes
+nMin <- 1 # minimum number of edges
+nMax <- 5 # maximum number of edges
+OUT <- "myRandomSIF.txt"
+
+
+# Create N random strings from three uppercase characters
+# First make more than we need, because some might not be unique ...
+nodes <- character(2*N)
+
+set.seed(161803)
+for (i in 1:(2*N)) {
+  nodes[i] <- paste0(sample(LETTERS, 1),
+                     sample(LETTERS, 1),
+                     sample(LETTERS, 1))
+}
+set.seed(NULL)
+
+nodes <- unique(nodes) # throw away duplicates ...
+nodes <- nodes[1:N]    # ... and keep only N
+
+# Create SIF output
+mySIF <- character()
+
+set.seed(112358)
+for (myA in nodes) {  # for each node
+  for (i in 1:sample(nMin:nMax, 1)) { # for a random number of interactors ...
+    myB <- sample(nodes, 1)           # ... randomly choose interactor ...
+                                      # ... create record and apend to mySIF
+    mySIF <- c(mySIF, sprintf("%s\tpp\t%s", myA, myB)) # myA, "pp", myB
+                                                       # separated by tabs
+  }
+}
+set.seed(NULL)
+
+# write mySIF to file
+writeLines(mySIF, OUT)
+</source>
+
+</div>
+  </div>
+
+;Install Cytoscape
+: Straightforward installation of <b>Cytoscape 3.5.1</b> from http://www.cytoscape.org
+
+;Visualize and explore options
+*:Worked through an introductory tutorial from http://opentutorials.cgl.ucsf.edu/index.php/Tutorial:Introduction_to_Cytoscape_3.1-part2 Noteworthy: nodes can be coloured by attribute values.
+*:Loaded my own SIF file with the File → Import → Network → File option. Explored various layout options and visualization styles. Manually added nodes and edges with the options one gets when ctrl-clicking on the canvas.
+
+{{Vspace}}
+
+=== Conclusion and outlook===
+
+* Creating layouts, applying styles, adding nodes and edges with Cytoscape seems straightforward and creates evocative images.
+* Analyzing and interpreting the network needs more thought. Need to explore ideas and tools for network analysis next - e.g. clustering tools, enrichment tools, motif discovery ...
+* Next: write some code to create attribute values for nodes, import the values, and have Cytoscape style the nodes accordingly.
+
+{{Vspace}}
+
+----
+
+<!-- Footnotes -->
+==Notes and References==
+<references />
+
+{{Vspace}}
+
+<!-- Category and Footer -->
+[[Category:BCH441-2019_Journal]]
+
+----
+
+{{CC-BY}}
+
+<!-- END -->
+
+```
+
+ 
+## Self-evaluation
+
+## Further reading, links and resources
+ 
+**If in doubt, ask!**<br>
+If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.
+
+ 
+
+```{block2, type="rmd-original-history"}
+<br>**Author**: Boris Steipe <boris.steipe@utoronto.ca> <br>
+**Created**: 2017-08-05<br>
+**Modified**: 2019-01-05<br>
+Version: 1.3<br>
+**Version history**:<br>
+1.3 Emphasize habit forming and cuncurrent editing. Note on license.<br>
+1.2 Make time tags mandatory; warn against fabrication.<br>
+1.1 Add GeSHi example<br>
+1.0 First live version<br>
+0.1 First stub<br>
+ 
+```
+ 
+### Updated Revision history
+```{r echo=FALSE}
+source("./bcb420_books_helper_functions.R")
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
+
+```
+
+
+
+<!--chapter:end:02-Journal.Rmd-->
+
+# Plagiarism and academic integrity {#plagiarism}
+
+(Plagiarism, proper citing, steering clear of academic misconduct, rules for collaboration)
+ 
+## Overview 
+### Abstract:
+
+In this course we operate a Full Disclosure Policy for attribution. This means everything that is not your own, original idea must be identified and properly attributed. ^[This includes journal articles and books, obviously, but also blogs, discussions on StackOverflow, Github gists, and especially course material of this and other courses, your peer's notes and journal entries. and material you have produced previously.]
+
+
+### Objectives:
+This unit will:
+
+  * point out the rationale for proper attribution;
+  * define the "Full Disclosure Policy" for attribution in my courses;
+  * introduce the resources available to you to avoid plagiarism and other academic misconduct.
+
+### Outcomes:
+After working through this unit you:
+
+  * are aware how academic offences can be avoided with a full-disclosure policy;
+  * are familiar with proper citation formats for journal and Web contents;
+  * ensure that all your activities in this course and elsewhere are in accordance with the letter of the published policies, and the spirit of scientific integrity.
+
+### Deliverables:
+**Time management**: Before you begin, estimate how long it will take you to complete this unit. Then, record in your course journal: the number of hours you estimated, the number of hours you worked on the unit, and the amount of time that passed between start and completion of this unit.
+
+**Journal**: Document your progress in your Course Journal. Some tasks may ask you to include specific items in your journal. Don't overlook these.
+
+**Insights**: If you find something particularly noteworthy about this unit, make a note in your insights! page.
+ 
+## Plagarism
+**Make this unit the first entry of your Journal!**
+ 
+This is the age of open source, boundless mashup, awesome reposts and instant repurposing of information. It might seem that our rules of referencing and citation are just another academic anachronism. After all, we all copy from [stack overflow](https://stackoverflow.com/), right?
+
+No - actually: wrong for two reasons. One: information is not any longer a commodity that increases in value if its supply is artificially constrained. Rather the value of information in academia - our common currency - is now "mindshare", and mindshare cannot grow without attribution. And two: part of any course at UofT is its "summative assessment": we mark submissions to evaluate the aptitude and achievements of students. That can only be done if original thinking by the student is clearly identified, and distinguished from merely repeating other's thoughts.
+
+But let's face it: **UofT has a plagiarism problem**. This has gotten worse over the past years - and it seems worse in the CS realms than in the domains of the life sciences. Yet, even if all your peers think no one cares about missing attributions, that doesn't make it somehow right: ethics is not a result of opinion polls. No matter how socially acceptable plagiarism has become, no matter how many others do "it", no matter how many likes or upvotes or retweets a "No Big Deal!" post attracts, unethical behaviour is wrong. It goes against everything we stand for as scientists. And it is corrosive, not just for your community, but first and foremost for yourself.
+
+In this course we operate a **Full Disclosure Policy**. That doesn't mean you can't get good data and examples from wherever you find them - on the contrary I absolutely expect you to hunt everywhere for information and examples: biostars, stack, RBloggers, even reddit (sometimes). There is great value in finding how others have addressed a problem, or divide up and organize a particular topic, and compiling the knowledge of the entire community is a great starting point for excellent work. But (a) this process has to be transparent, and, indeed you need to develop and document a sense of pride in mastering this art and attributing the contributions of your sources, and (b) compiling information does not substitute for your understanding of the material that you are presenting.
+
+Regardless whether you are reusing, quoting, paraphrasing, summarizing or following someone else's structure or advice: reference it. You can never reference too much, but if you don't reference enough you are probably committing an academic offence and I am obliged by University Policy to take the issue to the [Office of Student Academic Integrity (OSAI)](https://www.artsci.utoronto.ca/current/academic-advising-and-support/student-academic-integrity). Regardless whether you are writing an assignment, updating your journal, uploading code, replying to posts on the mailing list - for anything that is submitted for credit, directly or indirectly: make sure all your references are complete.
+The principle is quite simple:
+ 
+```{block, type="rmd-caution"}
+** Full disclosure policy for this course:**
+
+  * **If it's not your own, new idea, it has a source.**
+  * **All sources must be referenced.**
+```
+ 
+## How to reference
+ You probably have seen resources that refer to other's observations or opinions, and teach you to reference in manuscripts and essays in the life sciences and the humanities. These are generally less relevant for the kind of work that we do, and perhaps this is one of the reasons for poor uptake. Indeed, most of the writing in our courses is informal, and it may not be obvious how to properly embed citations in the flow of the narrative.
+The solution is to thouroughly **contextualize your attributions** with statements such as:
+
+  * "inspired by...",
+  * "based on...",
+  * "according to ...",
+  * "following ...",
+  * "see also ...",
+  * etc. as appropriate.
+
+Some specific points to consider:
+
+  1. On Wiki pages, use the <ref>text</ref> tag to organize your citations.
+  1. In R code, put your citations directly into the code in a comment.
+  1. The URL of an image on the Internet is not by itself an adequate reference. Author and context must be shown.
+  1. All links in references must be to the original source, not to e.g. a blog post about the source.
+  1. Code that is copied from e.g. stack overflow or similar must be referenced with a link to the post AND the name of the author.
+  1. Use the APA citation format for this course.
+ 
+ 
+## When and what to reference
+ Some material may be "common knowledge". Obviously, you don't need to cite the resource that taught you how to write a for-loop, for example. Where to draw the line? If in doubt, ask, discuss, seek consensus in the community and in class.
+ 
+  * Example code from an R package vignette that you adapt and reuse must be referenced.
+  * Code that you take from a different course must be referenced.
+  * Code that you take from this course must be referenced.
+  * Code that you have translated from a different language must be referenced.
+  * Code that you have jointly developed with a classmate must acknowledge the contribution.
+  * Code that you have copied from a classmate's work on the Student Wiki must be referenced.
+  * Code that is open source must be referenced.
+  * Code that is in the public domain must be referenced. This one is particularly troublesome: some authors put their code into the public domain, and state that you are free to use it without any copyright restrictions and without need for acknowledgement. But this can give rise to a misunderstanding: it only refers to the legal status as far as reuse is concerned, **it says nothing about authorship**. Obviously: just because someone graciously allowed you to use their idea, that does not mean that you are the author.
+ 
+ 
+## Reusing previous material
+ A second mistake that has brought students to the Dean's office more than once is re-use of material from previous courses. This is a simple one: **you can't get academic credit for the same material twice**. This means: if you have already submitted something for a different course elsewhere, or for a different assessment in the same course, it is no longer an original contribution. Of course you can cite your own work and then reuse it - if it's useful, bravo - good for you. But you have to be upfront about it, and apply the Full Disclosure Policy in spirit. Again: if in doubt, ask for advice.
+ 
+ 
+## "Adjusting" results
+It sometimes happens that a piece of code you are submitting won't run. It just won't. You can't see the mistake, it's three in the morning and you just can't take it anymore. It's just a small variation from the spec - and you can easily fix the output by hand.
+
+So you edit a few lines in a printout, or a few cells in a spreadsheet, and submit that result. All good, right?
+
+No. Not good at all. You have just falsified your code output. In terms of academic misconduct this is called "concoction". And it's pretty high on the list of things that will make for a very bad day.
+
+Do not ever change code output by hand. If an assignment asks you to submit code and results, **the exact code you submit must generate the exact output that is claimed for it**. Obvioulsy, there will be assessment scripts that will verify that. And when the assessment script signals a discrepancy, that will set off a process ...
+ 
+Above, I've highlighted a few issues that I have come accross in past courses. Below, are extensive resources that will help you work better. Go and read them.
+
+
+## A final note
+If you have any questions about these policies, if you would like to start a discussion, or if you can share some anecdotes: post on the mailing list. We need to make these policies alive and meaningful, otherwise we'll see mistake after mistake, tears, anguish and missed graduations. No more!
+ 
+ 
+##Further reading, links and resources
+[Code of Behaviour on Academic Matters The policy](https://governingcouncil.utoronto.ca/secretariat/policies/code-behaviour-academic-matters-july-1-2019). (Governing Council of the University of Toronto.)
+ 
+ 
+ 
+**If in doubt, ask!**<br>
+If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.
+
+ 
+```{block2, type="rmd-original-history"}
+<br>**Author**: Boris Steipe <boris.steipe@utoronto.ca> <br>
+**Created**: 2017-08-05<br>
+**Modified**: 2019-01-15<br>
+Version: 1.1.1<br>
+**Version history**:<br>
+1.1.1 Clarification: this courses material falls under the same policy<br>
+1.1 Update to "Full Disclosure Policy"<br>
+1.0 Completed to first live version<br>
+0.2 Links to FAS material<br>
+0.1 Material collected from previous tutorial<br>
+ 
+```
+### Updated Revision history
+```{r echo=FALSE}
+source("./bcb420_books_helper_functions.R")
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
+
+```
+
+### Footnotes:
+
+<!--chapter:end:04-Plagiarism.Rmd-->
+
+# Data Backup Best Practice {#backup}
+
+(Data backup technologies and best practice)
+ 
+## Overview 
+### Abstract:
+
+### Objectives:
+This unit will provide a brief introduction to backup problems and methods to solve them.
+
+### Outcomes:
+After working through this unit you ...
+
+  * have a sensible and effective strategy for backing up your computer;
+  * have demonstrated that you can recover data.
+
+### Deliverables:
+**Time management**: Before you begin, estimate how long it will take you to complete this unit. Then, record in your course journal: the number of hours you estimated, the number of hours you worked on the unit, and the amount of time that passed between start and completion of this unit.
+
+**Journal**: Document your progress in your Course Journal. Some tasks may ask you to include specific items in your journal. Don't overlook these.
+
+**Insights**: If you find something particularly noteworthy about this unit, make a note in your insights! page.
+
+
+## Data backups
+When was the last time you made a full backup of your computer's hard-drive? Too long ago? I thought so.
+
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+  1. Backup your hard-drive now.
+```
+
+Risk is probability times damage. The annualized probability of hard drive failure is on the order of 3%. This means about three of your classmates in this course will lose all their data this year. It is a bit better for solid state drives (SSD), perhaps only 0.3 failures per year. But what is the damage? All your essays, coursework, all the pictures on your computer, that email from your first love... There is no question you need to have plans in place to protect your data. After all, storage failure is not a question of if, but when.
+
+Enterprise-scale data in bioinformatics labs need dedicated solution and that is actually an increasing problem. For your small scale, personal backup needs you have a variety of options;
+
+  * Cloud backup may be bandwidth limited;
+  * Mac OS X has things well covered with thier Time machine / Time capsule, I don't know what the best equivalent is for other systems;
+  * off-machine storage in removable disk is a questionable startegy because everything that is not fully automatic is liable to fall victim to complecancy;
+  * Whenever possible, make differential backups. And remember: NO backup is a backup unless recovery of data has been tested and shown to work.
+
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+  * Use this [Google Search](https://www.google.ca/search?q=backup+options&num=20&tbs=qdr:y) for links to recent articles about backup options.
+  * Read a few articles that are relevant for your computer.
+  * Decide on a backup strategy for your computer.
+  * Implement your strategy.
+  * Create a test file.
+  * Backup your computer.
+  * Delete your test file.
+  * Recreate the file from your last backup.
+```
+
+## Self-evaluation
+## Notes
+## Further reading, links and resources
+Use this Google Search for links to recent articles about backup options.
+ 
+**If in doubt, ask!**<br>
+If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.
+
+ 
+```{block2, type="rmd-original-history"}
+<br>**Author**: Boris Steipe <boris.steipe@utoronto.ca> <br>
+**Created**: 2017-08-05<br>
+**Modified**: 2017-09-11<br>
+Version: 1.0<br>
+**Version history**:<br>
+1.0 Completed to first live version<br>
+0.2 Begin development from legacy material; points only<br>
+0.1 Material collected from previous tutorial<br>
+ 
+```
+
+### Updated Revision history
+```{r echo=FALSE}
+source("./bcb420_books_helper_functions.R")
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
+
+```
+
+
+<!--chapter:end:05-Data_backups.Rmd-->
+
+# Netiquette - (Network Etiquette)
+
+(Etiquette for the Internet and for this course)
+
+## Overview 
+### Abstract:
+Netiquette is a portmanteau of "network etiquette". It is a collection of social conventions for communication on the Internet such as e-mail, mailing lists, forums ... Here is a subset of relevance for our courses and workshops.
+
+### Objectives:
+Read about the basic rules and courtesies for communicating effectively and professionally in mailing lists and internet forums.
+
+### Outcomes:
+Apply the principles discussed on the page consistently throughout the course.
+Identify weaknesses and propose updates.
+
+### Deliverables:
+**Time management**: Before you begin, estimate how long it will take you to complete this unit. Then, record in your course journal: the number of hours you estimated, the number of hours you worked on the unit, and the amount of time that passed between start and completion of this unit.
+
+**Journal**: Document your progress in your Course Journal. Some tasks may ask you to include specific items in your journal. Don't overlook these.
+
+**Insights**: If you find something particularly noteworthy about this unit, make a note in your insights! page.
+
+  * Is there a pet-peeve of yours that is not mentioned here? Initiate a discussion on that on the course mailing list or contribute to the discussion if one has already started.
+  * Is this page still up to date? Cultural norms change, and our communication habits have changed tremendously in the past decade. Propose updates and/or improvements on on the course mailing list or contribute to the discussion if one has already started.
+
+---
+ 
+## Be kind
+
+This is the single most important rule. We are all working together. Let's all make this a pleasant and exciting experience.
+ 
+ 
+## Pay attention who you reply to
+
+If you use "reply", your message will go the entire list. Pause a moment, and consider whether this is what you want. Perhaps your message is of interest to only a single recipient? Or your message may be personal, or confidential ...
+ 
+ 
+## Use informative subject lines
+
+Spend a moment thinking what your post is about, then condense the message into a few words. This goes a long way towards:
+
+  * allowing the recipients to estimate how interested they are in the contents of your message;
+  * retrieving a thread in your archived messages;
+  * browsing the archives for information;
+  * keeping the ensuing discussion on topic.
+  * Try to be specific for example, 
+    * this subject line is poor: Chimera doesn't work!
+    * Much better would be: Can't load molecule in Chimera after editing coordinates
+  * If you must change the subject line, quote the old line as in: New subject (was: old subject)
+
+## Don't hijack threads
+
+If you have a new question, never simply write it into the reply to an older thread. This is called "Thread Hijacking" and it is rude and ineffective and it will cause me to have a poor opinion of your manners. If you hijack a thread:
+
+  * your new question will end up in an unrelated discussion;
+  * it will be much harder to search;
+  * the original poster's question gets diluted and may never get appropriately discussed;
+  * you demonstrate that you didn't actually care enough to type up a subject line.
+  * Use your mail-client's reply function if you contribute to a thread, write a new mail or post if you have something new to add. ^[Some mailing list software builds thread based on subject line and some software builds thread based on message ID. Only changing the subject line may not be sufficient to start a new thread. Since you usually don't know which does what, use the rule above to be sure.]
+  * As a corollary: if your post is related to the thread, by all means do use the reply function of your mail client and don't change the subject line, even if you think the original subject line was not well written or contained a (non-critical) typo etc.
+ 
+ 
+## Follow the discussion
+
+From time to time I see questions asked that have already been answered previously. This shows me that you did not follow the discussion. What do you think I think of that?
+Exactly.
+ 
+## Describe problems clearly
+
+Sometimes your problems will be due to a faulty assumption, sometimes due to incompatible software, sometimes due to bugs, or errors in assigned tasks ... The more clearly you describe what you did and what happened, the more likely it is someone will be able to help. Simply stating "this or that didn't work" will get you nowhere. Ask yourself:
+
+  1. Did I specify the circumstances under which the problem arose?
+  1. Did I specify exactly what happened and what I believe the problem is?
+  1. Have I given enough information so that someone else would be able to reproduce the problem?
+ 
+ 
+## Avoid screenshots
+
+Almost always when I see a screenshot of errors that arise during assignments, the issue would have been better described by copy/pasting code and text. Screenshots, as images, are a dead-ends for further analysis.
+
+  * If you paste a screenshot with a sequence ID, others will need to type it out, awkwardly, on a different page to reproduce your problem.
+  * If you paste a screenshot with a piece of code, others will have to type the code, awkwardly, into their code editor to reproduce your problem and experiment for a solution.
+  * If you paste a screenshot of an error message, it is that much more work to Google for the message and figure out what could have caused it.
+
+In all those cases, you prevent others from helping you quickly and effectively and you are wrong to expect others to type down the contents of your images because you didn't copy/paste the essential material. That's not smart. Also you are wasting other's bandwidth on their computers or mobile devices. That's rude.
+
+The only case where screenshots are encouraged is where an image is involved - but even then, for example when discussing R plots, the code that has generated the plot would be more helpful. dput() is your friend. And learn to create MWEs (Minimal Working Examples).
+ 
+ 
+## Show us that you've done your homework
+The ["How to Ask Questions the Smart Way"](http://www.catb.org/~esr/faqs/smart-questions.html) document gives the following excellent advice:
+
+<pre>
+Hasty-sounding questions get hasty answers, or none at all. The more you do to demonstrate having put thought and effort into solving your problem before seeking help, the more likely you are to actually get help. [...]
+
+Never assume you are entitled to an answer. [...]
+
+You will earn an answer, if you earn it, by asking a substantial, interesting, and thought-provoking question - one that implicitly contributes to the experience of the community rather than merely passively demanding knowledge from others.
+</pre>
+
+I can't put it any better.
+ 
+ 
+## Use mixed case and write full words
+
+Using UPPERCASE ONLY IS THE TYPOGRAPHIC EQUIVALENT OF SHOUTING; this is appropriate only under exceptional circumstances. some people use lowercase only. are they too lazy to find the caps key?
+
+```{r eval=FALSE}
+It also looks lik u cant B rly botherd 2 rite 
+if u rite ur txt with textN shorth&.
+``` 
+ 
+## Don't Troll
+<font size="15" color="red">Just don't do it, oK?</font>
+ 
+**Also remember: trolling, stalking, impersonating etc. may fall under sanctionable offences of the [University's Student Code of Conduct](https://governingcouncil.utoronto.ca/secretariat/policies/code-student-conduct-february-14-2002).**
+ 
+ 
+## No need to directly address someone
+
+Sending a message to the list reaches all list members. That's the point of the list: we are sharing discussions with everyone. There is no need to address anyone in particular (not even your professor), unless you are responding publicly to a specific statement by that person. Even generic salutations - like Howdy or Dear all, are nowadays usually omitted for the sake of brevity.
+ 
+ 
+## Resolve when done
+Once the problem has been solved, there is no need to thank contributors - but don't just walk away, you are not done! It is very important to share feedback whether the advice received has worked or not, or if something else worked instead. People helping you on a mailing list don't expect a reward except for one thing: the little satisfaction that their effort was actually helpful. Don't deny that, that would be rude.
+
+A separate reason to resolving such threads is that they are archived, and when others are looking for their solution they need to be able to tell whether there is hope to be found here.
+ 
+ 
+## Self-evaluation
+**Question 1**: Zachary has run into an issue when downloading an R package. He posts a screenshot of his computer in the mailing list to ask what could have gone wrong. Good or bad? ^[**Bad**.Reread the "Avoid screenshots" section above if you disagree.]
+ 
+**Question 2**:Amadeus has been following a discussion on the mailing list about Zachary's problem. That reminds him that he wasn't sure how to find a package that contains a particular function. He replies to Zachary's thread and asks his question. Good or bad? ^[**Bad**. Reread the "Don't hijack threads" section above if you disagree.]
+ 
+**Question 3**:Kaila responds to a post I have made, about some subtleties in identifying homologous sequences by sequence alignment. She is in a hurry and doesn't address me by name in her post. Good or bad? ^[**Good**. Reread the "No need to directly address someone" section above if you disagree.]
+
+## Further reading, links and resources
+
+  * Dall'Olio et al. (2011) Ten simple rules for getting help from online scientific communities. PLoS Comput Biol 7:e1002202. (pmid: 21980280)<br>
+[PubMed](https://www.ncbi.nlm.nih.gov/pubmed/?term=21980280)
+  * [Netiquette - Virginia Shea's Core Rules of Netiquette](http://www.opentextbooks.org.hk/ditatopic/4851)
+  * [How to create a Minimal, Complete, and Verifiable example – R advice via stackoverflow.](https://stackoverflow.com/help/minimal-reproducible-example)
+  * [How to Ask Questions the Smart Way for the technical minded, excellent advice!](http://www.catb.org/~esr/faqs/smart-questions.html)
+ 
+**If in doubt, ask!**<br>
+If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.
+
+ 
+```{block2, type="rmd-original-history"}
+<br>**Author**: Boris Steipe <boris.steipe@utoronto.ca> <br>
+**Created**: 2017-08-05<br>
+**Modified**: 2017-08-17<br>
+Version: 1.1<br>
+**Version history**:<br>
+1.1 Add thread resolution (Gabi Morgenshterns suggestion).<br>
+1.0 First live version using contents from an old page.<br>
+0.1 First stub<br>
+ 
+```
+
+### Updated Revision history
+```{r echo=FALSE}
+source("./bcb420_books_helper_functions.R")
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
+
+```
+
+### Footnotes: 
+
+<!--chapter:end:07-Netiquette.Rmd-->
+
+# Technical Questions {#technial_questions}
+
+(HInts for asking technical questions on mailing lists and forums)
+
+## Overview 
+### Abstract:
+We all depend on others' insights and help to get computing done. But there are good ways to ask technical questions, that will lead to quick and useful answers, and other ways...
+
+### Objectives:
+This unit will:
+
+  * direct you to three documents that discuss strategies for asking technical questions;
+
+### Outcomes:
+After working through this unit you:
+
+  * are familar with effective strategies for asking technical questions;
+  * understand the importance of MWE's (Minimal Working Examples);
+  * have begun to model these principles in your own work for this course and elsewhere.
+
+### Deliverables:
+**Time management**: Before you begin, estimate how long it will take you to complete this unit. Then, record in your course journal: the number of hours you estimated, the number of hours you worked on the unit, and the amount of time that passed between start and completion of this unit.
+
+**Journal**: Document your progress in your Course Journal. Some tasks may ask you to include specific items in your journal. Don't overlook these.
+
+**Insights**: If you find something particularly noteworthy about this unit, make a note in your insights! page.
+
+### Prerequisites:
+You need the following preparation before beginning this unit. If you are not familiar with this material from courses you took previously, you need to prepare yourself from other information sources:
+
+  * Writing: Basic essay and report writing skills. How to format your submitted materials, how to quote, cite and avoid plagiarism.
+
+ 
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+Study the following three documents:
+
+  * the [R Help Mailing list posting guide](https://www.r-project.org/posting-guide.html)
+  * [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/minimal-reproducible-example) – R advice via stackoverflow.
+  * [How to Ask Questions the Smart Way for the technical minded](http://www.catb.org/~esr/faqs/smart-questions.html), excellent advice!
+If you follow this advice, you can't go wrong.
+```
+
+
+## Self-evaluation
+
+## Further reading, links and resources
+
+**If in doubt, ask!**<br>
+If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.
+
+
+
+```{block2, type="rmd-original-history"}
+<br>**Author**: Boris Steipe <boris.steipe@utoronto.ca> <br>
+**Created**: 2017-08-05<br>
+**Modified**: 2017-09-11<br>
+Version: 1.0<br>
+**Version history**:<br>
+1.0 Completed to first live version<br>
+0.1 Material collected from previous assignments<br>
+ 
+```
+
+### Updated Revision history
+```{r echo=FALSE}
+source("./bcb420_books_helper_functions.R")
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
+
+```
+ 
+
+<!--chapter:end:08-Technical_questions.Rmd-->
+
+# Information Sources for Bioinformatics
+
+(Wikipedia, NAR, Bioinformatics.ca, PubMed, Citation index)
+
+## Overview
+
+### Abstract:
+This unit introduces key information sources for bioinformatics: journals, forums, and supporting sites.
+
+### Deliverables:
+**Time management**: Before you begin, estimate how long it will take you to complete this unit. Then, record in your course journal: the number of hours you estimated, the number of hours you worked on the unit, and the amount of time that passed between start and completion of this unit.
+
+**Journal**: Document your progress in your Course Journal. Some tasks may ask you to include specific items in your journal. Don't overlook these.
+
+**Insights**: If you find something particularly noteworthy about this unit, make a note in your insights! page.
+
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+  * Read the [introductory notes on bioinformatics concepts](boris_docs/FND-BIN-Concepts.pdf) for some general observations on bioinformatics, to set the stage.
+  * Read the [introductory notes on information sources for bioinformatics](boris_docs/BIN-Info_sources.pdf).
+```
+
+
+ 
+## Journals
+
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+  * Visit the [Nucleic Acids Research Journal (NAR) site](https://academic.oup.com/nar) and find the current database volume and the Web service volume.
+  * Task yourself to find at least one database and service that interests you, visit it and poke around. You should aim to develop an intuition for what to expect with such resources and how to use the services.
+  * -- (Next, visit bioinformatics.ca, navigate to the "Bioinformatics links directory" and try a sample search - e.g. for "disorder", or "localization". This service has been discontinued - thanks for notifying me, Xiaowen ... will update.) --
+```
+
+Incidentally: you can subscribe to regular Table of Contents updates from any journal. [nature](https://www.nature.com/) and [Science](https://science.sciencemag.org/) should for sure be in your inbox, but subscribe to some of the bioinformatics journal alerts too, at least for this term. A current list of journals is here: [List of bioinformatics journals](https://en.wikipedia.org/wiki/List_of_bioinformatics_journals).
+
+
+ 
+## Forums
+
+Much current, active exchange of bioinformatics knowledge happens in non-traditional platforms:
+
+`r task_counter <- task_counter + 1`
+## Task `r task_counter`
+
+```{block, type="rmd-task"}
+Visit each of the forums below and find (at least) one item that interests you.
+
+  * [BioStars](https://www.biostars.org/): General bioinformatics, computational-, and systems biology questions (timesink warning!)
+  * [Reddit](https://www.reddit.com/r/bioinformatics/): the bioinformatics "subreddit" (timesink warning!)
+  * [R-help](https://stat.ethz.ch/mailman/listinfo/r-help): The R programming language
+  * [Stack Overflow](https://stackoverflow.com/questions/tagged/r): R-related questions
+  * [BioConductor Support](https://www.bioconductor.org/help/support/): for all questions about the BioConductor Project
+  * [Cross Validated](https://stats.stackexchange.com/): statistics related questions on Stack-exchange
+```
+ 
+## Self-evaluation
+
+## Further reading, links and resources
+ 
+**If in doubt, ask!**<br>
+If anything about this learning unit is not clear to you, do not proceed blindly but ask for clarification. Post your question on the course mailing list: others are likely to have similar problems. Or send an email to your instructor.
+
+```{block2, type="rmd-original-history"}
+<br>**Author**: Boris Steipe <boris.steipe@utoronto.ca> <br>
+**Created**: 2017-08-05<br>
+**Modified**: 2019-09-14<br>
+Version: 1.1<br>
+**Version history**:<br>
+1.1 Bioinformatics.ca links database no longer exists<br>
+1.0 Live version<br>
+0.1 First stub<br>
+``` 
+ 
+### Updated Revision history
+```{r echo=FALSE}
+source("./bcb420_books_helper_functions.R")
+if (git2r::in_repository(".")) {
+  knitr::kable(githistory2table(git2r::commits(repo = ".", path = knitr::current_input())))
+} else {
+  cat("No Git history available.")
+}
+
+```
+
+
+<!--chapter:end:09_Bin_info_sources.Rmd-->
+

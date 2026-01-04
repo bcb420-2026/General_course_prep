@@ -1,19 +1,19 @@
 --- 
 title: "BCB420 - Computational System Biology"
 author: "Main author: Boris Steipe; Modified: Ruth Isserlin"
-date: "last modified 2019-12-24"
+date: "last modified 2026-01-04"
 site: bookdown::bookdown_site
 output:   bookdown::gitbook
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: bcb420-2020/General_course_prep
+github-repo: bcb420-2026/General_course_prep
 description: "Prerequisite work for U of T course BCB420 - Computational System Biology"
 download: ["epub"]
-edit : https://github.com/bcb420-2020/General_course_prep/edit/master/%s
-history: https://github.com/bcb420-2020/General_course_prep/commits/master/%s
-view:  https://github.com/bcb420-2020/General_course_prep/blob/master/%s
+edit : https://github.com/bcb420-2026/General_course_prep/edit/master/%s
+history: https://github.com/bcb420-2026/General_course_prep/commits/master/%s
+view:  https://github.com/bcb420-2026/General_course_prep/blob/master/%s
 ---
 
 # About
@@ -25,7 +25,7 @@ Original content for this book was created by [Boris Steipe](http://biochemistry
 This book was created using The **bookdown** package and can be installed from CRAN or Github:
 
 
-```r
+``` r
 install.packages("bookdown")
 # or the development version
 # devtools::install_github("rstudio/bookdown")

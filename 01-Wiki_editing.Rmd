@@ -81,7 +81,7 @@ Here are some examples of the markup of Wikitext. It is not the same as HTML mar
 You can format text in a monospace font with a dashed box around it either by marking it with the HTML \<pre\> tag, or by putting a blank space at the beginning of a line. 
 Example:
 
-<pre>You can format text in a monospace font with a dashed box around it either by marking it with the HTML \<pre\>" tag, or by putting a blank space at the beginning of a line.</pre>
+<pre>You can format text in a monospace font with a dashed box around it either by marking it with the HTML \<pre\> tag, or by putting a blank space at the beginning of a line.</pre>
 
 ### Other special characters at the beginning of a line include:
 | What you type |  What it looks like| 

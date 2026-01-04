@@ -1,4 +1,5 @@
 # Insights! {#insights}
+
 (Instructions for authoring a collection of course-related insights)
 
 ## Overview 

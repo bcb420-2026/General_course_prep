@@ -1,4 +1,5 @@
 # Your Course Journal {#journal}
+
 (How to keep a course- or lab journal)
 
 ## Overview 
@@ -25,15 +26,6 @@ Upon concluding this unit you should be able to ...
   1. Your Journal: Your entire journal will be evaluated at the end of the course. Refer to the marking rubrics for details.
   1. Insights: If you find something particularly noteworthy about this unit, make a note in your insights! page.
 
-```{block2, type="rmd-caution"}
- 1. Your course journal is a deliverable of this course and it will be graded. Therefore all rules regarding plagiarism and other academic misconduct apply in full. In particular:
-  * **do not include any material from elsewhere without referencing it:**
-We are operating a "full disclosure" policy in this course. Anything that you did not write yourself, on the spot, must be referenced. In particular you need to reference if you are copying your own material from other courses.;
-  * **do not fabricate material that you are posting in your journal.**
-Fabrication could include things like: modifying results produced by your code, describing work that you have not actually done, or claiming a time for the journal entry that is not the time/date on which it was actually written. All of these are academic offences.;
-  * **Note:** Only journal entries that were written concurrently with the activity they describe will be evaluated for credit.
-  * **Note:** All journal pages on the Student Wiki—like all other submitted material—must contain a {{CC-BY}} template.
-```
 
 ### Prerequisites:
 

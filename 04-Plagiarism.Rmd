@@ -1,4 +1,5 @@
 # Plagiarism and academic integrity {#plagiarism}
+
 (Plagiarism, proper citing, steering clear of academic misconduct, rules for collaboration)
  
 ## Overview 
@@ -97,24 +98,6 @@ No. Not good at all. You have just falsified your code output. In terms of acade
 Do not ever change code output by hand. If an assignment asks you to submit code and results, **the exact code you submit must generate the exact output that is claimed for it**. Obvioulsy, there will be assessment scripts that will verify that. And when the assessment script signals a discrepancy, that will set off a process ...
  
 Above, I've highlighted a few issues that I have come accross in past courses. Below, are extensive resources that will help you work better. Go and read them.
-
-`r task_counter <- task_counter + 1`
-## Task `r task_counter`
-
-```{block2, type="rmd-task"}
-  * Visit the following sites and read the material carefully:
-  
-    1. [Smart Strategies (OSAI)](https://www.academicintegrity.utoronto.ca/smart-strategies/)
-    1. [How Not to Plagiarize (UofT Writing Advice)](http://advice.writing.utoronto.ca/using-sources/how-not-to-plagiarize/)
-    1. [Quoting (UofT Writing Advice)](http://advice.writing.utoronto.ca/using-sources/quotations/) Mostly relevant for essays, but also for your own journal: when to quote, when to paraphrase, when to summarize.
-    1. [Paraphrasing and Summarizing (UofT Writing Advice)](http://advice.writing.utoronto.ca/using-sources/paraphrase/) Illustrating the distinction between illegitimate and proper paraphrase, and summary by example.
-    1. [Standard Documentation formats (UofT Writing Advice)](http://advice.writing.utoronto.ca/using-sources/documentation/) This includes a concise overview on citing electronic sources.
-
-  * Then - for your own reference - **put a model of the following three types of references into your journal**:
-    * a procedure in the methods section of a journal article, as you would cite it in a technical report;
-    * a piece of code you found in a StackOverflow article, as you would put it as a comment into computer code;
-    * some contents from a classmate's journal that you incoporate into your own journal.
-```
 
 
 ## A final note
